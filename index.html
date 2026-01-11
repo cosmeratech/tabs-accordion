@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs & Accordion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Tabs -->
+        <div class="tabs-card">
+            <div class="tabs-header">
+                <button class="tab active" data-tab="design">Design</button>
+                <button class="tab" data-tab="code">Code</button>
+                <button class="tab" data-tab="deploy">Deploy</button>
+                <span class="indicator"></span>
+            </div>
+
+            <div class="tabs-body">
+                <div class="tab-panel active" id="design">
+                 <h2>UX/UI Design</h2>  
+                 <p>Craft seamless and intuitive user experiences that delight and empower users.</p> 
+            </div>
+            <div class="tab-panel" id="code">
+                <h2>Code</h2>
+                <p>Write clean, efficient, and maintainable code that powers modern applications.</p>
+            </div>
+            <div class="tab-panel" id="deploy">
+                <h2>Deploy</h2>
+                <p>Deploy applications to production environments, ensuring they are reliable and scalable.</p>
+            </div>
+                
+            </div>
+        </div> 
+
+        <!-- Accordion -->
+        <div class="accordion-card">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Why use Vanilla JS?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    Vanilla JS is a lightweight, fast, and easy-to-learn JavaScript framework that provides a solid foundation for building modern web applications.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    What are the benefits of using Vanilla JS?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    Vanilla JS offers several benefits, including:
+                    <ul>
+                        <li>Lightweight and fast performance</li>
+                        <li>Easy to learn and use</li>
+                        <li>Flexibility and customization</li>
+                        <li>Strong community support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Is it production ready?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    Yes, Vanilla JS is production ready and can be used to build complex web applications.
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
